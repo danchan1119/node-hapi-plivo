@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/danchan1119/node-hapi-plivo",
   "dependencies": {
-    "hapi": "^5.1.0"
+    "hapi": "^5.1.0",
+    "plivo": "^0.1.0"
   }
 }

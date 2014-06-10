@@ -1,14 +1,12 @@
 var Hapi = require('hapi');
-/*var routes = require('./routes')(Hapi);*/
+var routes = require('./routes')(Hapi);
 
 var server = Hapi.createServer('localhost', process.env.PORT || 3000);
 
 server.route([{
   method: 'GET',
   path: '/vote/sms',
-  handler: function (request, reply) {
-    reply('hello world');
-  }
+  handler: routes.voteSMS
 }]);
 
 server.start();
